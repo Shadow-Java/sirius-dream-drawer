@@ -1,5 +1,8 @@
 package sirius.core.concurrency.jmh;
 
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+
 /**
  * cpu核心数：https://zhuanlan.zhihu.com/p/86855590
  * @author shadow
@@ -7,8 +10,9 @@ package sirius.core.concurrency.jmh;
  **/
 public class Solution {
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws InterruptedException {
+        BlockingQueue<Integer> blockingQueue = new ArrayBlockingQueue<>(10);
+        blockingQueue.take();
     }
 
     public void getCurrentActiveThread(){
