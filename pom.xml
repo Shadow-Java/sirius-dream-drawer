@@ -19,6 +19,7 @@
 
     <modules>
         <module>sirius-core-concurrency-libraries</module>
+        <module>sirius-core-component-hub</module>
     </modules>
 
     <properties>
